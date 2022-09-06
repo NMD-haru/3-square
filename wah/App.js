@@ -1,17 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, View } from 'react-native';
+import Vuong from './components/vuong';
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.square} backgroundColor='red'>
-      <Text>Square</Text>
-      </View>
-      <View style={styles.square} backgroundColor='orange'>
-      <Text>Square</Text>
-      </View>
-      <View style={styles.square} backgroundColor='yellow'>
-      <Text>Square</Text>
-      </View>
+     <Vuong color='red'></Vuong>
+     <Vuong color='orange'></Vuong>
+     <Vuong color='yellow'></Vuong>
     </View>
   );
 }
@@ -22,11 +16,5 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems:'center',
-  },
-  square: {
-    height: 100,
-    width: 100,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 });

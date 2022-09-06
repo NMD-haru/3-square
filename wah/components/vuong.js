@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function vuong({color}) {
+export default function Vuong({color}) {
   return (
-      <View style={styles.square}>
+      <View style={styles.square} backgroundColor={color}>
       <Text>Square</Text>
       </View>
   );
@@ -14,6 +14,6 @@ const styles = StyleSheet.create(
     width: 100,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor:color,
+    
   },
 });
